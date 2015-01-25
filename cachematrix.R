@@ -5,7 +5,7 @@
 ## set the value of the imatrix
 ## get the value of the imatrix
 ## example: 
-## B<-matrix(1:9,3,3)
+## B<-matrix(c(4, 2, 7, 6), 2, 2)
 ## BC<-makeCacheMatrix(B)
 
 makeCacheMatrix <- function(x = matrix()) {
