@@ -4,9 +4,8 @@
 ## get the value of the matrix
 ## set the value of the imatrix
 ## get the value of the imatrix
-## example: 
-## B<-matrix(c(4, 2, 7, 6), 2, 2)
-## BC<-makeCacheMatrix(B)
+## example: B<-matrix(c(4, 2, 7, 6), 2, 2)
+##          BC<-makeCacheMatrix(B)
 
 makeCacheMatrix <- function(x = matrix()) {
        m <- NULL
@@ -25,12 +24,12 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## cacheSolveMatrix description
-## Return a matrix that is the inverse of 'x'
-## it first checks to see if the mean has already been calculated. 
-## If so, it gets the invert matrix from the cache and skips the computation. 
-## If not, it calculates the invert matrix from the matrix data the cache via the solve function.
-## example: 
-## cacheSolveMatrix(BC)
+## Return a matrix that is the inverse of the matrix above
+## checks to see if the inverse of the matrix has been calculated already
+## if yes: it gets it from the cache 
+## If not: it will calculate it using the solve function.
+
+## example: cacheSolveMatrix(BC)
 
 cacheSolveMatrix <- function(x, ...) {
         m <- x$getimatrix()
